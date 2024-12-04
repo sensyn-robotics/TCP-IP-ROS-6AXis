@@ -220,18 +220,16 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <origin xyz="0 0 0.5" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://dh_pgc140_urdf/meshes/base_link.STL" />
+                <box size="0.063 0.063 0.099"/>
             </geometry>
         </collision>
     </link>
-    <joint name="endeffect" type="prismatic">
-        <origin xyz="0.0 0.0 0.007" rpy="0 0 0" />
+    <joint name="endeffect" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
         <parent link="Link6" />
         <child link="hand_base_link" />
-        <axis xyz="1 0 0" />
-        <limit lower="0" upper="0.025" effort="140" velocity="1" />
     </joint>
     <link name="finger1_link">
         <inertial>
@@ -251,7 +249,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://dh_pgc140_urdf/meshes/finger1_Link.STL" />
+                <box size="0.01 0.01 0.03"/>
             </geometry>
         </collision>
     </link>
@@ -280,7 +278,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://dh_pgc140_urdf/meshes/finger2_Link.STL" />
+                <box size="0.01 0.01 0.03"/>
             </geometry>
         </collision>
     </link>
