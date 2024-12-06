@@ -202,7 +202,7 @@
         <parent link="Link5" />
         <child link="Link6" />
         <axis xyz="0 0 1" />
-        <limit lower="-6.28" upper="6.28" effort="0" velocity="0" />
+        <limit lower="-3.13" upper="3.13" effort="0" velocity="0" />
     </joint>
     <link name="hand_base_link">
         <inertial>
@@ -220,13 +220,13 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0 0.5" rpy="0 0 0" />
+            <origin xyz="0 0 0.05" rpy="0 0 0" />
             <geometry>
-                <box size="0.063 0.063 0.099"/>
+                <cylinder length="0.08" radius="0.04"/>
             </geometry>
         </collision>
     </link>
-    <joint name="endeffect" type="fixed">
+    <joint name="joint7" type="fixed">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
         <parent link="Link6" />
         <child link="hand_base_link" />
@@ -247,9 +247,9 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <origin xyz="0 0 0.02" rpy="0 0 0" />
             <geometry>
-                <box size="0.01 0.01 0.03"/>
+                <cylinder length="0.04" radius="0.01"/>
             </geometry>
         </collision>
     </link>
@@ -276,9 +276,9 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <origin xyz="0 0 0.02" rpy="0 0 0" />
             <geometry>
-                <box size="0.01 0.01 0.03"/>
+                <cylinder length="0.04" radius="0.01"/>
             </geometry>
         </collision>
     </link>
