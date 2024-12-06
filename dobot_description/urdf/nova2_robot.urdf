@@ -213,7 +213,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://dh_pgc140_urdf/meshes/base_link.STL" />
+                <mesh filename="package://dobot_description/meshes/nova2/finger/base_link.STL" />
             </geometry>
             <material name="">
                 <color rgba="1 1 1 1" />
@@ -240,7 +240,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://dh_pgc140_urdf/meshes/finger1_Link.STL" />
+                <mesh filename="package://dobot_description/meshes/nova2/finger/finger1_Link.STL" />
             </geometry>
             <material name="">
                 <color rgba="1 1 1 1" />
@@ -269,7 +269,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://dh_pgc140_urdf/meshes/finger2_Link.STL" />
+                <mesh filename="package://dobot_description/meshes/nova2/finger/finger2_Link.STL" />
             </geometry>
             <material name="">
                 <color rgba="0.79216 0.81961 0.93333 1" />
