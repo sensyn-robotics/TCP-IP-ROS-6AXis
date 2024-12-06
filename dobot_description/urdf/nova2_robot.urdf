@@ -220,9 +220,9 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0 0.05" rpy="0 0 0" />
+            <origin xyz="0 0 0.075" rpy="0 0 0" />
             <geometry>
-                <cylinder length="0.08" radius="0.04"/>
+                <cylinder length="0.13" radius="0.06"/>
             </geometry>
         </collision>
     </link>
