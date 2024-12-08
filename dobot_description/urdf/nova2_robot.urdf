@@ -220,9 +220,9 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0 0.075" rpy="0 0 0" />
+            <origin xyz="0 -0.01 0.075" rpy="0 0 0" />
             <geometry>
-                <cylinder length="0.13" radius="0.06"/>
+                <cylinder length="0.13" radius="0.053"/>
             </geometry>
         </collision>
     </link>
@@ -238,24 +238,24 @@
             <inertia ixx="0.00036805" ixy="-7.2868E-08" ixz="-5.0168E-08" iyy="0.0003341" iyz="-2.6462E-06" izz="0.00022294" />
         </inertial>
         <visual>
-            <origin xyz="0 0.05 0.0" rpy="0 0 0" />
+            <origin xyz="-0.05 0 0.0" rpy="0 0 0" />
             <geometry>
-                <box size="0.06 0.05 0.03"/>
+                <box size="0.05 0.06 0.03"/>
             </geometry>
             <material name="">
                 <color rgba="1 1 1 1" />
             </material>
         </visual>
         <collision>
-            <origin xyz="0 0.05 0.0" rpy="0 0 0" />
+            <origin xyz="-0.05 0 0.0" rpy="0 0 0" />
             <geometry>
-                <box size="0.06 0.05 0.03"/>
+                <box size="0.05 0.06 0.03"/>
             </geometry>
         </collision>
     </link>
     <joint name="joint8" type="fixed">
         <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
-        <parent link="Link6" />
+        <parent link="hand_base_link" />
         <child link="camera" />
     </joint>
     <link name="finger1_link">
