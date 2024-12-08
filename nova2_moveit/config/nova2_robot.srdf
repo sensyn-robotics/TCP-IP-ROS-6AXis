@@ -43,4 +43,6 @@
     <disable_collisions link1="Link5" link2="Link6" reason="Adjacent"/>
     <disable_collisions link1="hand_base_link" link2="finger1_link" reason="Never"/>
     <disable_collisions link1="hand_base_link" link2="finger2_link" reason="Never"/>
+    <disable_collisions link1="hand_base_link" link2="camera" reason="Never"/>
+    <disable_collisions link1="Link6" link2="camera" reason="Never"/>
 </robot>
